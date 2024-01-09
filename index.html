@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 4</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Gênero</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>Masculino</td>
+                <td>joao@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Adriana</td>
+                <td>Feminino</td>
+                <td>adriana@gmail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <button class="ativo">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>10</button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        let btns = document.querySelectorAll('button');
+        for(let i = 0; i < btns.length; i++){
+            btns[i].onclick = () => {
+                btns[i].classList.add('ativo')
+            }
+        }
+    </script>
+  </body>
+</html>
